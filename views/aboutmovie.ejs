@@ -1,0 +1,23 @@
+<%- include("./partials/header")  %> 
+
+<div class="coloring">
+<div class="text-center">
+    <img src="<%=movieInfo.Poster%>" class="rounded" alt="No Image Found">
+  </div>
+
+
+  <ul class="list-group">
+    <li class="list-group-item">IMDB Rating :  <%=movieInfo.imdbRating%>/10.0</li>
+  
+    <li class="list-group-item list-group-item-primary">Released Date : <%=movieInfo.Released%> </li>
+    <li class="list-group-item list-group-item-secondary">Plot of the Movie : <%=movieInfo.Plot%></li>
+    <li class="list-group-item list-group-item-success">Main Cast : <%=movieInfo.Actors%></li>
+    <li class="list-group-item list-group-item-danger">Directed by : <%=movieInfo.Director%></li>
+    <li class="list-group-item list-group-item-warning">Writer : <%=movieInfo.Writer%></li>
+    <li class="list-group-item list-group-item-info">Production Houses : <%=movieInfo.Production%></li>
+    <li class="list-group-item list-group-item-light">Awards : <%=movieInfo.Awards%></li>
+    <li class="list-group-item list-group-item-dark">Box Office Collection : <%=movieInfo.BoxOffice%></li>
+  </ul>
+</div>
+    
+<%- include("./partials/footer")  %> 
